@@ -1,3 +1,10 @@
+## Citation
+
+If you use this tool, please cite:
+
+*Manuscript under review.*
+*[Link will be added upon publication]*
+
 # Statistical region growing by vectorseeds
 
 This R script provides functions to perform seed-based statistical region growing on raster data. It includes utilities for extracting neighboring cells, growing regions from seed points, and converting raster regions to polygons. The script is designed for geospatial analysis using the terra package. The script is designed to help collect reference pixels from rasters around point objects based on the statistical similarity of the neighboring pixel values. The function calculates the relative standard deviation and stops at a user-defined threshold, enabling automated selection of spectrally homogeneous areas for analysis. Accordingly, the function incorporates new pixels step-by-step and calculates the mean ± z × SD values where the "z" defines the threshold: when z=1, the pixel values have to be within 68.2% range around the mean; when z=0.5, the range is 38.3%. This iterative approach ensures consistent and reliable pixel sampling for remote sensing applications and spatial analysis.
